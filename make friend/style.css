@@ -1,0 +1,98 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.hero{
+  width: 100%;
+  min-height: 100vh;
+  background-image: url(v2osk-1Z2niiBPg5A-unsplash.jpg);
+  background-position: center;
+  background-size: cover;
+  overflow: hidden;
+  padding: 10px 10% ;
+  position: absolute;
+}
+nav{
+  padding: 10px 0;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.hero h2{
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-style: italic;
+  color:#c6d128 ;
+}
+.hero nav ul li{
+  display: inline;
+  margin: 10px 10px;
+  list-style: none;
+}
+.hero nav ul li a{
+  text-decoration: none;
+  color: black;
+  font-weight: 400;
+}
+.hero nav ul li a:hover{
+  color: aliceblue;
+}
+.login-btn{
+  text-decoration: none;
+  color: black;
+  margin-right: 15px;
+  font-weight: 900;
+}
+.btn{
+  display: inline-block;
+  text-decoration: none;
+  padding: 14px 40px;
+  color: #fff;
+  background-image: linear-gradient(45deg, #677588,#eded83);
+  font-size: 14px;
+  border-radius: 30px;
+  border-top-right-radius:0 ;
+  transition: 0.5s;
+}
+.content{
+  margin-top: 10%;
+  max-width: 800px;
+}
+.content h1{
+  font-size: 70px;
+  color: #c6d128;
+}
+.content p{
+  margin: 10px 0 10px;
+  color: white;
+  animation-delay: 0.5s;
+}
+.content .btn{
+  padding: 15px 60px;
+  font-size: 15px;
+    animation-delay: 1s;
+}
+.btn:hover{
+  border-top-right-radius: 30px ;
+}
+.no-background-img{
+  position: absolute;
+  width: 450px;
+  bottom: 0;
+right: 10%;
+}
+.anim{
+  opacity: 0;
+  transform: translateY(30px);
+  animation: moveup 0.5s linear forwards;
+}
+@keyframes moveup{
+  100%{
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+.no-background-img.anim{
+  animation-delay: 1.5s;
+}
